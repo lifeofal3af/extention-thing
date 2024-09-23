@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheUnblocker Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInDown 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+        p {
+            opacity: 0;
+            animation: fadeInDown 1s ease forwards;
+            animation-delay: 1s;
+        }
+        .download-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+        img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 10px;
+            filter: brightness(0.8) contrast(1.2);
+        }
+        .download-option {
+            opacity: 0;
+            animation: fadeInDown 1s ease forwards;
+        }
+        .download-option:nth-child(1) {
+            animation-delay: 1.5s;
+        }
+        .download-option:nth-child(2) {
+            animation-delay: 2s;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TheUnblocker Extension</h1>
+        <p>Welcome to the download page for TheUnblocker extension. Choose your browser below to download:</p>
+        
+        <div class="download-section">
+            <div class="download-option">
+                <img src="/api/placeholder/64/64" alt="Firefox logo">
+                <br>
+                <a href="#" class="download-button">Download for Firefox</a>
+            </div>
+            <div class="download-option">
+                <img src="/api/placeholder/64/64" alt="Chrome logo">
+                <br>
+                <a href="#" class="download-button">Download for Chrome</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
